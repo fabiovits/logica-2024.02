@@ -1,0 +1,38 @@
+<script>
+    //105) Escreva um algoritmo em pseudocodigo para ler um vetor de tamanho 10 e escreva a posição de cada elemento com valor igual a 25 neste vetor.
+
+    //entrada
+    let elementos = entraDados(10)
+    //processamento
+    let resposta = encontraValores(elementos,25)
+    //saida
+    document.write(`posição encontrada (s): ${resposta}`)
+    
+    //functions
+    function entradaDados(tamanho) {
+        let valor = []
+        for(let i = 0; i < tamanho; i++) {
+            valores [i] = parseInt(prompt (`digite o ${i + 1} valor`))
+        }
+    
+    return valores
+    }
+
+    function encontrarValores(listaValores, procurando ) {
+        let indexEncontrados = ""
+        for (let i = 0; i < listaValores.lenght; i++) {
+            if(listaValores[i] == procurando ) {
+                indexEncontrados += `${i},`
+            }
+        }
+        return indexEncontrados
+    }
+    
+
+
+
+
+
+
+
+</script>
